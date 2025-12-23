@@ -3,7 +3,8 @@ from __future__ import annotations
 from typing import Optional
 import pandas as pd
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 
 
 def chunk_recursive(
