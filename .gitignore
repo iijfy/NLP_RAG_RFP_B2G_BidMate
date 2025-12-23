@@ -2,3 +2,4 @@ data/data_original/
 .venv/
 outputs/
 .hf_home/
+__pycache__/
