@@ -134,23 +134,24 @@ PYTHONPATH=$(pwd) python -m modules.eval.mixed_eval
 
 10. 평가 결과
 
-count = 20
-Hit@5 = 0.9
-MRR@5 = 0.8375
-G-Eval accuracy avg = 4.6
-G-Eval completeness avg = 3.9
-G-Eval professionalism avg = 4.2
+- count = 20
+- Hit@5 = 0.9
+- MRR@5 = 0.8375
+- G-Eval accuracy avg = 4.6
+- G-Eval completeness avg = 3.9
+- G-Eval professionalism avg = 4.2
 
-저장 파일:
-outputs/eval_retrieval_results.csv
-outputs/eval_mixed_judgments.jsonl
+  
+- 저장 파일:
+  - outputs/eval_retrieval_results.csv
+  - outputs/eval_mixed_judgments.jsonl
 
 ---
 
 11. 해석 및 개선 방향
 
-Hit@5는 0.9로 대부분의 질의에서 정답 프로젝트를 Top-5 내에 포함했습니다.
-hit=0이 발생한 질의가 존재하므로(20개 중 2개) 다음 개선을 우선순위로 둡니다.
+- Hit@5는 0.9로 대부분의 질의에서 정답 프로젝트를 Top-5 내에 포함했습니다.
+- hit=0이 발생한 질의가 존재하므로(20개 중 2개) 다음 개선을 우선순위로 둡니다.
 
 개선 후보:
 - 청킹 파라미터 튜닝: chunk_size/overlap, separators, 문단/표 구조 보존
