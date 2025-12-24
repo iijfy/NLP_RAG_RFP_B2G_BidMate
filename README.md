@@ -68,7 +68,7 @@ PDF/HWP 로딩, 청킹·임베딩·리트리벌 고도화와 평가 지표 설�
 source ~/morgan_env/bin/activate
 python -m pip install -U pip setuptools wheel
 python -m pip install -r requirements.txt
-
+```
 ---
 
 ## 6. 인덱싱 (Qdrant 빌드)
@@ -85,7 +85,7 @@ export EMBEDDING_DEVICE="cuda"
 export QDRANT_COLLECTION="rfp_recursive"
 
 PYTHONPATH=$(pwd) python -m modules.embedding.build_qdrant
-
+```
 ---
 
 ## 7. 검색 스모크 테스트
@@ -97,7 +97,7 @@ cd ~/NLP_RAG_RFP_B2G_BidMate
 export QDRANT_COLLECTION="rfp_recursive"
 
 PYTHONPATH=$(pwd) python -m modules.retrieval.test_search
-
+```
 ---
 
 ## 8. Gradio UI 실행
@@ -107,7 +107,7 @@ source ~/morgan_env/bin/activate
 cd ~/NLP_RAG_RFP_B2G_BidMate
 
 PYTHONPATH=$(pwd) python app.py
-
+```
 ---
 
 ## 9. 평가 실행 (Retrieval + Answer 혼합 평가)
@@ -129,7 +129,7 @@ export JUDGE_BACKEND="openai"
 export JUDGE_MODEL="gpt-5-mini"
 
 PYTHONPATH=$(pwd) python -m modules.eval.mixed_eval
-
+```
 ---
 
 10. 평가 결과
