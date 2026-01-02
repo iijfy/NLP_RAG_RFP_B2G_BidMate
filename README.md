@@ -1,3 +1,5 @@
+![예시 이미지](example.png)
+
 # 📝 NLP_RAG_RFP_B2G_BidMate
 
 공공·기업 RFP 문서를 대상으로 핵심 요구사항/예산/제출정보를 추출·요약하는 사내 RAG 시스템입니다.  
